@@ -26,10 +26,10 @@ const Experience =()=>{
     ]
     return(
         <div>
-            <div className="w-full h-[10px] bg-[#DAA520]"></div>
+            <div className="w-full h-[10px] bg-gradient-to-r from-[#002a55] to-[#1282f1]"></div>
         <div id='skills' className="exp bg-white py-[50px]">
             <div className="flex text-center align-middle justify-center mx-auto">
-            <h1 className="text-[55px] font-gruppo font-extrabold"> UMIEJĘTNOŚCI</h1></div>
+            <h1 className="text-[35px] sm:text-[55px] font-gruppo font-extrabold"> UMIEJĘTNOŚCI</h1></div>
             
             <div className="grid grid-cols-2">
             <div className="ml-[10%]">

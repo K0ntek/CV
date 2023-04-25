@@ -33,8 +33,8 @@ const Navbar=()=>{
             <ul className="flex">
                 {navElements.map((element, i)=>{
                     return(
-                        <li key={i} className="text-white cursor-pointer mx-[20px] px-[25px] py-[8px] rounded-full text-[25px] group hover:text-[#4f28ff] transition-all duration-300">
-                        <Link to={element.link} smooth={true} className=" font-gruppo font-bold">{element.title} <div className="w-[10px] h-[10px] bg-[#4f28ff] rounded-full mx-auto group-hover:w-full group-hover:h-[6px]  transition-all duration-300"></div></Link></li>
+                        <li key={i} className="text-white cursor-pointer mx-[20px] px-[25px] py-[8px] rounded-full text-[25px] group hover:text-[#1282f1] transition-all duration-300">
+                        <Link to={element.link} smooth={true} className=" font-gruppo font-bold">{element.title} <div className="w-[10px] h-[10px] bg-[#1282f1] rounded-full mx-auto group-hover:w-full group-hover:h-[6px]  transition-all duration-300"></div></Link></li>
                     )
                 })}
             </ul>
