@@ -15,7 +15,7 @@ const Footer=()=>{
                 <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] hover:text-[#45a2ff] transition-all duration-300"/></a>
             </div>
         </div>
-        <div className="bg-black text-white text-[20px] text-center py-[20px] sm:flex space-y-[15px] space-x-[40px] justify-center">
+        <div className="bg-black text-white text-[20px] text-center py-[20px] sm:flex space-y-[15px] md:space-y-0 space-x-[40px] justify-center">
            <p className="font-orbitron"> 790 839 086</p>
 
             <p className="font-orbitron">jakub.kontek05@gmail.com</p>

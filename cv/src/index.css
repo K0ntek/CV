@@ -90,10 +90,44 @@ body {
   animation: shadow 4s both infinite;
 }
 
-.exp h1{
-  /* letter-spacing: 4px; */
-}
+/* 
+.navbar{
+  border-radius: 0px 0px 0px 30px;
+} */
 
 .navbar{
-  border-radius: 0 0 0 30px;
+  transition: .5s;
+  position: fixed;
+  top:0;
+}
+
+.activeNavbar {
+  position: fixed;
+  right: 0;
+  top:0;
+}
+
+.line{
+  width: 30px;
+  height: 2px;
+  border-radius: 2px;
+  background:#1282f1;
+  transition: .3s;
+}
+.activeIcon .item-1{
+  transform: rotate(45deg);
+  position: relative;
+  top:4px;
+  transition: .3s;
+}
+
+.activeIcon .item-2{
+  display: none;
+}
+
+.activeIcon .item-3{
+  transform: rotate(-45deg);
+  position: relative;
+  top:-4px;
+  transition: .3s;
 }

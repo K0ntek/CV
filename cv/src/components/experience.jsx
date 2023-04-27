@@ -31,7 +31,7 @@ const Experience =()=>{
             <div className="flex text-center align-middle justify-center mx-auto">
             <h1 className="text-[35px] sm:text-[55px] font-gruppo font-extrabold"> UMIEJĘTNOŚCI</h1></div>
             
-            <div className="grid grid-cols-2">
+            <div className="md:grid grid-cols-2">
             <div className="ml-[10%]">
                <ul>
                 {skills.map((skill, i)=>{

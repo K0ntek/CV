@@ -17,7 +17,7 @@ const Header=()=>{
 
     return(
         <div id='home' className="header min-h-screen lg:grid grid-cols-2 mx-auto justify-center text-center">
-            <div className="sm:mt-[60px] lg:mt-0 relative top-[50%] translate-y-[100%] sm:translate-y-0 lg:translate-y-[-20%] mx-auto w-[70%]">
+            <div className="sm:mt-[60px] lg:mt-0 relative top-[50%] translate-y-[50%] sm:translate-y-0 lg:translate-y-[-20%] mx-auto w-[70%]">
             <h1 className="name text-[55px] sm:text-[70px] font-orbitron uppercase">Jakub Kontek</h1>
             <TypeAnimation
                 sequence={[
