@@ -28,6 +28,10 @@ const Navbar=()=>{
             title: 'umiejętności',
             link: 'skills'
         },
+        {
+            title: 'projekty',
+            link: 'projects'
+        },
     ]
 
     const [activeNavbar, setNavbar] = useState('navbar')
@@ -42,7 +46,7 @@ const Navbar=()=>{
 
     return(
        <>
-        <div className="w-[30px] z-[99] fixed top-[1%] right-[1%] sm:hidden" onClick={toggleNavbar}>
+        <div className="w-[30px] z-[99] fixed top-[1%] right-[1%] md:hidden" onClick={toggleNavbar}>
             <div className={activeIcon} onClick={icon}>
                 <div className="line item-1 my-[6px]"></div>
                 <div className="line item-2 my-[6px]"></div>
@@ -50,8 +54,8 @@ const Navbar=()=>{
             </div>
         </div>
 
-    <div className={`fixed top-0 right-[-100%] sm:right-0 navbar bg-black w-[60%] sm:rounded-bl-[30px] sm:w-fit text-center z-[10] ${activeNavbar}`}>
-    <ul className="sm:flex h-screen sm:h-fit relative mt-[60%] sm:mt-0">
+    <div className={`fixed top-0 right-[-100%] md:right-0 navbar bg-black w-[60%] md:rounded-bl-[30px] md:w-fit text-center z-[10] ${activeNavbar}`}>
+    <ul className="md:flex h-screen md:h-fit relative mt-[60%] md:mt-0">
         {navElements.map((element, i)=>{
             return(
                 <li key={i} className="text-white cursor-pointer mx-[20px] px-[25px] py-[8px] rounded-full text-[25px] group hover:text-[#1282f1] transition-all duration-300">

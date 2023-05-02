@@ -34,7 +34,7 @@ const Projects =()=>{
     },[])
 
     return(
-        <div className=" py-[100px] bg-[#000000]">
+        <div className=" py-[100px] bg-[#000000]" id='projects'>
         <div className="projects w-[90%] grid md:grid-cols-2 mx-auto gap-y-[40px]">
             <div className="projectTitle mx-auto my-auto text-center sm:w-[60%] space-y-[30px]">
                 <div className="w-fit mx-auto ">
