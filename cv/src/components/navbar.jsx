@@ -50,7 +50,7 @@ const Navbar=()=>{
             </div>
         </div>
 
-    <div className={`fixed top-0 right-[-100%] sm:right-0 navbar bg-black w-[60%] sm:w-fit text-center z-[10] ${activeNavbar}`}>
+    <div className={`fixed top-0 right-[-100%] sm:right-0 navbar bg-black w-[60%] sm:rounded-bl-[30px] sm:w-fit text-center z-[10] ${activeNavbar}`}>
     <ul className="sm:flex h-screen sm:h-fit relative mt-[60%] sm:mt-0">
         {navElements.map((element, i)=>{
             return(

@@ -19,6 +19,7 @@ const Header=()=>{
         <div id='home' className="header min-h-screen lg:grid grid-cols-2 mx-auto justify-center text-center">
             <div className="sm:mt-[60px] lg:mt-0 relative top-[50%] translate-y-[50%] sm:translate-y-0 lg:translate-y-[-20%] mx-auto w-[70%]">
             <h1 className="name text-[55px] sm:text-[70px] font-orbitron uppercase">Jakub Kontek</h1>
+            <div className="h-[130px] sm:h-fit">
             <TypeAnimation
                 sequence={[
                     'Programista',
@@ -28,8 +29,9 @@ const Header=()=>{
                 ]}
                 speed={50}
                 repeat={Infinity}
-                className="font-orbitron text-[40px] sm:text-[55px] text-transparent bg-clip-text bg-gradient-to-r from-[#3c19d4] to-[#522ff0] w-[30%]"
+                className=" font-orbitron text-[40px] sm:text-[55px] text-transparent bg-clip-text bg-gradient-to-r from-[#4702a0] to-[#1282f1] w-[30%]"
             />
+            </div>
             <div className="flex text-[20px] my-[10px]"><BsFillTelephoneFill className="contactIcon"/>
             <p className="font-orbitron"> 
              <CountUp end={790} className=" font-orbitron"/>  
@@ -40,8 +42,8 @@ const Header=()=>{
             <TypeAnimation sequence={['jakub.kontek05@gmail.com', 2000]} className="font-orbitron"/></div>
             
             <div className="flex space-x-[10px] mt-[10px]">
-                <a href="https://www.facebook.com/profile.php?id=100009894456441"><BsFacebook className="text-[30px] text-[#000000] hover:text-[#522ff0] transition-all duration-300"/></a>
-                <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] text-[#000000] hover:text-[#522ff0] transition-all duration-300"/></a>
+                <a href="https://www.facebook.com/profile.php?id=100009894456441"><BsFacebook className="text-[30px] text-[#000000] hover:text-[#5a25a0] transition-all duration-300"/></a>
+                <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] text-[#000000] hover:text-[#5a25a0] transition-all duration-300"/></a>
             </div>
             </div>
             <img src="image.jpg" className="selfImage my-auto mx-auto w-[50%] hidden sm:block lg:w-[70%]" alt="image"/>

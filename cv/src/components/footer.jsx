@@ -5,7 +5,8 @@ import Navbar from "./navbar";
 const Footer=()=>{
     return(
        <div>
-         <div className="footer bg-[#050505] py-[50px]">
+        <div className="w-full h-[10px] bg-gradient-to-r from-[#1b003d] to-[#42088f] "></div>
+         <div className="footer bg-[#05010a] py-[50px]">
             <div className="text-white text-center py-[10px] space-y-[20px]">
             <h1 className=" text-[40px] lg:text-[70px] font-orbitron">JAKUB KONTEK</h1>
                     <div className="w-fit mx-auto">
@@ -18,7 +19,7 @@ const Footer=()=>{
                 <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] hover:text-[#1282f1] transition-all duration-300"/></a>
             </div>
         </div>
-        <div className="bg-black text-white text-[20px] text-center py-[20px] sm:flex space-y-[15px] md:space-y-0 space-x-[40px] justify-center">
+        <div className="bg-[#05010a] text-white text-[20px] text-center py-[20px] sm:flex space-y-[15px] md:space-y-0 space-x-[40px] justify-center">
            <p className="font-orbitron"> 790 839 086</p>
 
             <p className="font-orbitron">jakub.kontek05@gmail.com</p>

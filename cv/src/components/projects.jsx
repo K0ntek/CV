@@ -29,6 +29,7 @@ const Projects =()=>{
         gsap.registerPlugin(ScrollTrigger)
         gsap.fromTo('.project', {y:'200px', opacity:0}, {y:0, opacity:1, duration:.5, stagger:.2, scrollTrigger:{trigger:'.projects', start:'top 40%'}})
         gsap.fromTo('.projectTitle', {x:'-200px', opacity:0}, {x:0, opacity:1, duration:.5, scrollTrigger:{trigger:'.projects', start:'top 40%'}})
+        gsap.fromTo('.projectBorder', {width:'8px', opacity:0}, {width:'40%', opacity:1, duration:.5, delay:.3, scrollTrigger:{trigger:'.projects', start:'top 40%'}})
 
     },[])
 
@@ -39,7 +40,7 @@ const Projects =()=>{
                 <div className="w-fit mx-auto ">
                     <h1 className=" text-[40px] lg:text-[60px] font-orbitron"><span className="text-[80px] lg:text-[120px] font-orbitron">MOJE</span><br/>PROJEKTY</h1>
 
-                    <div className="w-[40%] h-[8px] bg-gradient-to-r from-[#ffffff] to-black rounded-full mx-auto"></div>
+                    <div className="projectBorder w-[40%] h-[8px] bg-gradient-to-r from-[#ffffff] to-black rounded-full mx-auto"></div>
                 </div>
             </div>
 
