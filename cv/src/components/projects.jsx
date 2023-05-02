@@ -35,7 +35,7 @@ const Projects =()=>{
     return(
         <div className=" py-[100px] bg-[#000000]">
         <div className="projects w-[90%] grid md:grid-cols-2 mx-auto gap-y-[40px]">
-            <div className="projectTitle mx-auto my-auto text-center w-[60%] space-y-[30px]">
+            <div className="projectTitle mx-auto my-auto text-center sm:w-[60%] space-y-[30px]">
                 <div className="w-fit mx-auto ">
                     <h1 className=" text-[40px] lg:text-[60px] font-orbitron"><span className="text-[80px] lg:text-[120px] font-orbitron">MOJE</span><br/>PROJEKTY</h1>
 

@@ -74,10 +74,14 @@ body {
   animation: text 3s both infinite;
 }
 
-.projectTitle h1{
+.projectTitle h1, .footer h1{
   -webkit-text-stroke: 1px white;
   text-shadow: 0px 0px 20px white;
   color: transparent;
+}
+
+.footer h2{
+  text-shadow: 0px 0px 20px #6001db;
 }
 
 .project:hover{
