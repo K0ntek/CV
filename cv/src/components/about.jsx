@@ -6,7 +6,7 @@ import {CgProfile, MdCastForEducation, AiOutlineProfile} from 'react-icons/all'
 const About =()=>{
     return(
         <>
-        <div className="w-full h-[60px] mt-[5px] bg-gradient-to-t from-black to-transparent"></div>
+        <div className="w-full h-[150px] mt-[5px] bg-gradient-to-t from-black to-transparent"></div>
         <div id='about' className="bg-black h-fit py-[50px] xl:grid grid-cols-[35%_65%] z-[99]">
             <VerticalBlocks />
 

@@ -74,6 +74,17 @@ body {
   animation: text 3s both infinite;
 }
 
+.projectTitle h1{
+  -webkit-text-stroke: 1px white;
+  text-shadow: 0px 0px 20px white;
+  color: transparent;
+}
+
+.project:hover{
+  box-shadow: 0px 0px 30px 0px rgb(160, 160, 160);
+  transition: .5s;
+}
+
 .contactIcon{
   border: 1px solid #522ff0;
   padding: 5px;

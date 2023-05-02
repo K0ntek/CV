@@ -9,11 +9,11 @@ import {HiMenuAlt3 } from 'react-icons/hi'
 
 const Navbar=()=>{
 
-    useEffect(()=>{
-        gsap.registerPlugin(ScrollTrigger)
+    // useEffect(()=>{
+    //     gsap.registerPlugin(ScrollTrigger)
 
-        gsap.fromTo('.navbar', {y:'-200px', opacity:0}, {y:0, opacity:1, duration:.5})
-    }, [])
+    //     gsap.fromTo('.navbar', {y:'-200px', opacity:0}, {y:0, opacity:1, duration:.5})
+    // }, [])
 
     const navElements = [
         {
