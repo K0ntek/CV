@@ -46,7 +46,7 @@ const Projects =()=>{
 
                 {projectNav.map((element, i)=>{
                     return(
-                            <a href={element.link}>
+                            <a href={element.link} key={i}>
                                 <div className="project group rounded-3xl relative overflow-hidden border-[2px] w-[95%] md:w-[80%] my-auto border-gray-500 mx-auto">
                                    <div className="group-hover:scale-125 transition-all duration-300">
                                    <div style={{background: `linear-gradient(80deg, rgba(0,0,0,.1), black),url(${element.img})`,
