@@ -12,12 +12,12 @@ const HorizontalBlocks=()=>{
 
     return(
         <div className="md:grid grid-rows-6 w-[100%] hidden">
-            <div className="hElement w-[80%] ml-[20%] h-[90%] bg-black"></div>
-            <div className="hElement hElement w-[100%] h-[90%] bg-black"></div>
-            <div className="hElement w-[60%] ml-[40%] h-[90%] bg-black"></div>
-            <div className="hElement w-[70%] ml-[30%] h-[90%] bg-black"></div>
-            <div className="hElement w-[80%] ml-[20%] h-[90%] bg-black"></div>
-            <div className="hElement w-[40%] ml-[60%] h-[90%] bg-black"></div>
+            <div className="hElement w-[80%] ml-[20%] h-[90%] bg-gradient-to-r from-black to-[#014488] rounded-l-lg"></div>
+            <div className="hElement hElement w-[100%] h-[90%] bg-gradient-to-r from-black to-[#014488] rounded-l-lg"></div>
+            <div className="hElement w-[60%] ml-[40%] h-[90%] bg-gradient-to-r from-black to-[#014488] rounded-l-lg"></div>
+            <div className="hElement w-[70%] ml-[30%] h-[90%] bg-gradient-to-r from-black to-[#014488] rounded-l-lg"></div>
+            <div className="hElement w-[80%] ml-[20%] h-[90%] bg-gradient-to-r from-black to-[#014488] rounded-l-lg"></div>
+            <div className="hElement w-[40%] ml-[60%] h-[90%] bg-gradient-to-r from-black to-[#014488] rounded-l-lg"></div>
         </div>
     
     )
