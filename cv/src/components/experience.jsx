@@ -26,8 +26,8 @@ const Experience =()=>{
     ]
     return(
         <div>
-            <div className="w-full h-[10px] bg-gradient-to-r from-[#002a55] to-[#1282f1]"></div>
-        <div id='skills' className="exp bg-white py-[50px] pb-[100px]">
+            <div className="w-full h-[10px] bg-gradient-to-r from-[#002a55] to-[#42088f]"></div>
+        <div id='skills' className="exp bg-white py-[100px] pb-[150px]">
             <div className="flex text-center align-middle justify-center mx-auto">
             <h1 className="text-[35px] sm:text-[55px] font-gruppo font-extrabold"> UMIEJĘTNOŚCI</h1></div>
             
@@ -41,7 +41,7 @@ const Experience =()=>{
                 })}
                 </ul>
             </div>
-           <HorizontalBlocks className=" justify-end absolute right-0"/>
+           <HorizontalBlocks className=" absolute right-0"/>
             </div>
             
         </div>
