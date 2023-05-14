@@ -27,7 +27,7 @@ const Experience =()=>{
     return(
         <div>
             <div className="w-full h-[10px] bg-gradient-to-r from-[#002a55] to-[#42088f]"></div>
-        <div id='skills' className="exp bg-white py-[100px] pb-[150px]">
+        <div id='skills' className="exp bg-[#dadada] py-[100px] pb-[150px]">
             <div className="flex text-center align-middle justify-center mx-auto">
             <h1 className="text-[35px] sm:text-[55px] font-gruppo font-extrabold"> UMIEJĘTNOŚCI</h1></div>
             
@@ -36,7 +36,7 @@ const Experience =()=>{
                <ul>
                 {skills.map((skill, i)=>{
                    return(
-                    <li key={i} className="flex my-[10px]"><GiPlainSquare className="mt-[6px] mx-[10px]"/><span className="text-[20px] font-gruppo font-bold">{skill.element}</span></li>
+                    <li key={i} className="flex my-[10px]"><GiPlainSquare className="mt-[6px] mx-[10px]"/><span className="text-[20px] font-gruppo font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#1d0142] to-[#063768]">{skill.element}</span></li>
                    )
                 })}
                 </ul>

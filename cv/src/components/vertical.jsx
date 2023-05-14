@@ -11,9 +11,9 @@ const VerticalBlocks=()=>{
     },[])
     return(
         <div className="elements xl:grid grid-cols-4 w-full overflow-hidden hidden">
-            <div className="element w-full mx-auto h-[80%] bg-gradient-to-t from-[#131f04] to-black rounded-3xl"></div>
+            <div className="element w-full mx-auto h-[80%] bg-gradient-to-t from-[#22435f] to-black rounded-3xl"></div>
             <div className="element w-full mx-auto h-[70%] bg-gradient-to-t from-white to-black rounded-3xl"></div>
-            <div className="element w-full mx-auto h-[90%] bg-gradient-to-t from-[#2b054b]  to-black rounded-3xl"></div>
+            <div className="element w-full mx-auto h-[90%] bg-gradient-to-t from-[#270d3d]  to-black rounded-3xl"></div>
             <div className="element w-full mx-auto h-[60%] bg-gradient-to-t from-[#afd7ff] to-black rounded-3xl"></div>
         </div>
     

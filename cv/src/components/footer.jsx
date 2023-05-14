@@ -2,7 +2,7 @@ import React from "react";
 import {BsFillTelephoneFill, AiOutlineMail, BsFacebook, BsGithub} from 'react-icons/all'
 import { TypeAnimation } from "react-type-animation";
 import { useEffect } from "react";
-import { gsap } from "gsap";
+import { gsap } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/all";
 
 const Footer=()=>{
@@ -10,15 +10,20 @@ const Footer=()=>{
     useEffect(()=>{
         gsap.registerPlugin(ScrollTrigger)
 
-        gsap.fromTo(".footerBorder", {x:'-100%', opacity:0}, {x:0, opacity:1, duration:.5, width:"100%", scrollTrigger:{trigger:'.footer', start:'top 70%'}})
-        gsap.to('.footerBorder', {width:'80%', marginLeft:"10%", delay:.7, ease:'ease-in-out'})
+        let tl = gsap.timeline({
+            scrollTrigger:{trigger:'.footer', start:'top 70%'}
+        })
+
+        tl.fromTo(".footerBorder", {x:'-100%', opacity:0}, {x:0, opacity:1, duration:.5, width:"100%"})
+            .to('.footerBorder', {width:'80%', marginLeft:"10%", ease:'ease-in-out'})
+            
     },[])
 
     return(
        <div>
        {/* <div className="bg-black"> <div className="w-[85%] mx-auto rounded-full h-[10px] bg-gradient-to-r from-[#1b003d] to-[#42088f] "></div></div> */}
        <div className="bg-black"> <div className="footerBorder w-[80%] mx-auto rounded-full h-[10px] bg-gradient-to-r from-black to-[#2c035e] "></div></div>
-         <div className="footer bg-black py-[50px]">
+         <div className="footer bg-black pt-[50px]">
             <div className="text-white text-center py-[10px] space-y-[20px]">
             <h1 className=" text-[40px] lg:text-[70px] font-orbitron">JAKUB KONTEK</h1>
                     <div className="w-fit mx-auto h-[120px] sm:h-fit">
@@ -42,13 +47,13 @@ const Footer=()=>{
                 <a href="https://www.facebook.com/profile.php?id=100009894456441"><BsFacebook className="text-[30px] hover:text-[#1282f1] transition-all duration-300"/></a>
                 <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] hover:text-[#1282f1] transition-all duration-300"/></a>
             </div>
-            <div className="bg-[#05010a] text-white text-[20px] text-center py-[20px] sm:flex space-y-[15px] md:space-y-0 space-x-[40px] justify-center">
-           <p className="font-orbitron"> 790 839 086</p>
+            <div className="bg-gradient-to-b from-black to-[#130625] text-white text-[20px] text-center py-[20px] justify-center space-y-[10px] sm:space-y-0 sm:flex sm:space-x-[50px]">
+           <p className="font-orbitron flex justify-center">   <BsFillTelephoneFill className="text-[#4702a0] mt-[5px] mx-[10px]"/>790 839 086</p>
 
-            <p className="font-orbitron">jakub.kontek05@gmail.com</p>
+            <p className="font-orbitron flex justify-center text-[18px]">  <AiOutlineMail className="text-[#4702a0] mt-[5px] mx-[10px]"/>jakub.kontek05@gmail.com</p>
             </div>
-           <div className="bg-[#05010a] py-[20px]">
-           <p className="w-[80%] mx-auto text-[14px] text-white font-gruppo font-bold text-justify">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie
+           <div className="bg-[#130625] py-[20px]">
+           <p className="w-[80%] mx-auto text-[16px] text-[#34a4ff] font-gruppo font-bold text-justify">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie
                 z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób
                 fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</p>
            </div>

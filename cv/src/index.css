@@ -71,11 +71,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #522ff0;
+  background: #cacaca;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #886dff;
+  background: #3818c5;
 }
 
 .header{
@@ -100,6 +101,10 @@ body {
   text-shadow: 0px 0px 20px #6001db;
 }
 
+.projects, .projectsContainer{
+  box-shadow: 0px 0px 30px 0px #000000;
+}
+
 .project:hover{
   box-shadow: 0px 0px 30px 0px rgb(160, 160, 160);
   transition: .5s;
@@ -120,6 +125,8 @@ body {
   border-radius: 40% 60% 30% 50%;
   animation: shadow 4s both infinite;
 }
+
+
 
 /* 
 .navbar{

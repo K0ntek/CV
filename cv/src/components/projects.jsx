@@ -27,16 +27,17 @@ const Projects =()=>{
 
     useEffect(()=>{
         gsap.registerPlugin(ScrollTrigger)
+        // gsap.fromTo('.projectsContainer', {y:'400px', opacity:0}, {y:0, opacity:1, duration:.6, scrollTrigger:{trigger:'.projects', start:'top 40%'}})
         gsap.fromTo('.project', {y:'200px', opacity:0}, {y:0, opacity:1, duration:.5, stagger:.2, scrollTrigger:{trigger:'.projects', start:'top 40%'}})
         gsap.fromTo('.projectTitle', {x:'-200px', opacity:0}, {x:0, opacity:1, duration:.5, scrollTrigger:{trigger:'.projects', start:'top 40%'}})
-        gsap.fromTo('.projectBorder', {width:'8px', opacity:0}, {width:'40%', opacity:1, duration:.5, delay:.3, scrollTrigger:{trigger:'.projects', start:'top 40%'}})
+        gsap.fromTo('.projectBorder', {width:'8px', opacity:0}, {width:'40%', opacity:1, duration:.5, delay:.4, scrollTrigger:{trigger:'.projects', start:'top 40%'}})
 
     },[])
 
     return(
-       <div className=" bg-black">
-         <div className=" py-[100px] bg-black w-[90%] relative top-[-60px] mx-auto rounded-[60px]" id='projects'>
-        <div className="projects w-[90%] grid md:grid-cols-2 mx-auto gap-y-[40px]">
+       <div className=" bg-black projects">
+         <div className="projectsContainer py-[100px] bg-black w-[90%] relative top-[-60px] mx-auto rounded-[60px]" id='projects'>
+        <div className=" w-[90%] grid md:grid-cols-2 mx-auto gap-y-[40px]">
             <div className="projectTitle mx-auto my-auto text-center sm:w-[60%] space-y-[30px]">
                 <div className="w-fit mx-auto ">
                     <h1 className=" text-[40px] lg:text-[60px] font-orbitron"><span className="text-[80px] lg:text-[120px] font-orbitron">MOJE</span><br/>PROJEKTY</h1>
