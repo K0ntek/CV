@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import project from '../assets/projects/2023-10-22 18-47-30.mp4'
 
 import viteReact from '/vite-react.png'
 import dni from '/dni.png'
@@ -36,7 +37,7 @@ const Projects =()=>{
 
     return(
        <div className=" bg-black projects">
-         <div className="projectsContainer py-[100px] bg-black w-[90%] relative top-[-60px] mx-auto rounded-[60px]" id='projects'>
+             <div className="projectsContainer py-[100px] bg-black w-[90%] relative top-[-60px] mx-auto rounded-[60px]" id='projects'>
         <div className=" w-[90%] grid md:grid-cols-2 mx-auto gap-y-[40px]">
             <div className="projectTitle mx-auto my-auto text-center sm:w-[60%] space-y-[30px]">
                 <div className="w-fit mx-auto ">
@@ -72,6 +73,16 @@ const Projects =()=>{
                 })}
         </div>
         </div>
+
+        <div className="w-fit mx-auto ">
+                    <h1 className="projectTitle text-[40px] font-orbitron text-white">OSTATNI PROJEKT</h1>
+
+                    <div className="projectBorder w-[40%] h-[8px] bg-gradient-to-r from-[#ffffff] to-black rounded-full mx-auto"></div>
+                </div>
+            <video controls autoplay className="w-[50%] rounded-3xl overflow-hidden mx-auto mt-6">
+                <source src={project} type="video/mp4" className=" scale-150" />
+            </video>
+
        </div>
     )
 }

@@ -51,13 +51,13 @@ body {
 
 @keyframes shadow{
   0%{
-    box-shadow: 0px 0px 30px black;
+    box-shadow: 0px 0px 30px gray;
   }
   50%{
-    box-shadow: 0px 0px 0px black;
+    box-shadow: 0px 0px 0px gray;
   }
   100%{
-    box-shadow: 0px 0px 30px black;
+    box-shadow: 0px 0px 3ch gray;
 }
 }
 
@@ -122,7 +122,8 @@ body {
 }
 
 .header .selfImage{
-  border-radius: 40% 60% 30% 50%;
+  /* border-radius: 30% 40% 30% 40%; */
+  border-radius: 50%;
   animation: shadow 4s both infinite;
 }
 
