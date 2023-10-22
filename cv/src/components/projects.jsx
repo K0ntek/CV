@@ -75,7 +75,7 @@ const Projects =()=>{
         </div>
 
         <div className="w-fit mx-auto ">
-                    <h1 className="projectTitle text-[40px] font-orbitron text-white">OSTATNI PROJEKT</h1>
+                    <h1 className="projectTitle text-[40px] font-orbitron text-white">OSTATNI PROJEKT<br/>(w trakcie budowy)</h1>
 
                     <div className="projectBorder w-[40%] h-[8px] bg-gradient-to-r from-[#ffffff] to-black rounded-full mx-auto"></div>
                 </div>
