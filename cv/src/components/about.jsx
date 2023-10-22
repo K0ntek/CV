@@ -1,4 +1,4 @@
-import React, { useDeferredValue } from "react";
+import React from "react";
 import VerticalBlocks from "./vertical";
 
 import {CgProfile, MdCastForEducation, AiOutlineProfile} from 'react-icons/all'
