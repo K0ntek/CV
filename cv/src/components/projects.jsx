@@ -79,7 +79,7 @@ const Projects =()=>{
 
                     <div className="projectBorder w-[40%] h-[8px] bg-gradient-to-r from-[#ffffff] to-black rounded-full mx-auto"></div>
                 </div>
-            <video controls autoplay className="w-[50%] rounded-3xl overflow-hidden mx-auto mt-6">
+            <video controls autoplay className="xl:w-[50%] rounded-3xl overflow-hidden mx-auto mt-6">
                 <source src={project} type="video/mp4" className=" scale-150" />
             </video>
 
