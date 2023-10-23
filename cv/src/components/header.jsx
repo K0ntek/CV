@@ -46,7 +46,7 @@ const Header=()=>{
                 <a href="https://github.com/k0ntek"><BsGithub className="text-[30px] text-[#000000] hover:text-[#5a25a0] transition-all duration-300"/></a>
             </div>
             </div>
-            <img src="image.jpg" className="selfImage my-auto mx-auto w-[50%] lg:w-[70%]" alt="image"/>
+            <img src="image.jpg" className="hidden sm:block selfImage my-auto mx-auto w-[50%] lg:w-[70%]" alt="image"/>
         </div>
     )
 }
